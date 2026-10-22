@@ -1,0 +1,21 @@
+[project]
+name = "excerpta-rag"
+version = "0.1.0"
+description = "EXCERPTA-RAG: local paper knowledge base, from MinerU markdown to a searchable, citable chunk index"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp>=2.0"]
+
+[project.scripts]
+excerpta-rag = "paper_rag.cli:main"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

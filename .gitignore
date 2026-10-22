@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# 产物：切块结果、向量、缓存，体积大且可重建
+data/
+
+# 本地环境变量：含 API key，绝对不能提交
+.env
+.env.local
+*.env
+!.env.example
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
